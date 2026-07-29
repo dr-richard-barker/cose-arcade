@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CoSE Arcade · games & modeling tools</title>
+<meta name="description" content="A hub for original lunar/space games (Lunar Habitat, lunar farming, Settlers of the Moon or Mars, Brute Bowl and more) and browser-based plant modeling & simulation tools (seed sowing, virtual root, leaf CFD, statolith physics).">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .tile{display:flex;flex-direction:column;gap:.5rem}
+  .tile .icon{font-size:1.8rem;line-height:1}
+  .tile .meta{display:flex;gap:.4rem;flex-wrap:wrap;align-items:center;margin-top:auto;padding-top:.6rem}
+  .tile .btn{padding:.35rem .75rem;font-size:.85rem}
+  .tag{font-size:.72rem;padding:.12rem .5rem;border-radius:999px;border:1px solid var(--line);color:var(--muted);background:var(--bg)}
+  .tag.live{color:#fff;background:var(--accent);border-color:var(--accent)}
+  .tag.proto{color:var(--accent2);border-color:var(--accent2)}
+</style>
+</head><body>
+<header class="site"><nav>
+  <span class="brand">🕹️ CoSE Arcade</span>
+  <a href="#games" style="color:var(--accent)">Games</a>
+  <a href="#tools">Modeling tools</a>
+  <a href="https://github.com/dr-richard-barker">GitHub ↗</a>
+</nav></header>
+<main>
+<section class="hero">
+  <h1>CoSE Arcade — original space games &amp; plant modeling tools</h1>
+  <p class="lede">A hub for two kinds of things built along the way: <b>original lunar and Martian
+     games</b> made in the spirit of the classic Maxis sims, and <b>browser-based plant
+     modeling &amp; simulation tools</b> — from seed sowing to root auxin transport to leaf gas-flow CFD.</p>
+  <div class="badges">
+    <span class="badge">original games</span><span class="badge">browser-playable</span>
+    <span class="badge">plant simulators</span><span class="badge">open source</span>
+  </div>
+</section>
+
+<h2 id="games">🎮 Games</h2>
+<div class="cards">
+  <div class="card tile"><span class="icon">🏙️</span>
+    <h3>Lunar Arcade</h3>
+    <p>Maxis-tribute browser games — a dig-down <b>Lunar Habitat</b> (SimTower-style) and <b>Boring Mining</b>.</p>
+    <div class="meta"><span class="tag live">live</span>
+      <a class="btn primary" href="https://dr-richard-barker.github.io/lunar-arcade/">Play →</a>
+      <a class="btn" href="https://github.com/dr-richard-barker/lunar-arcade">Code</a></div></div>
+
+  <div class="card tile"><span class="icon">🌾</span>
+    <h3>Lunar Sims</h3>
+    <p>SimFarm-inspired isometric <b>lunar farming</b> on the regolith surface.</p>
+    <div class="meta"><span class="tag live">live</span>
+      <a class="btn primary" href="https://dr-richard-barker.github.io/LunarSims/">Play →</a>
+      <a class="btn" href="https://github.com/dr-richard-barker/LunarSims">Code</a></div></div>
+
+  <div class="card tile"><span class="icon">🎲</span>
+    <h3>Settlers of the Moon or Mars</h3>
+    <p>A Settlers-style colony game with 3D-printable board models.</p>
+    <div class="meta"><span class="tag live">live</span>
+      <a class="btn primary" href="https://dr-richard-barker.github.io/Settlers_of_the_Moon_or_Mars/">Play →</a>
+      <a class="btn" href="https://github.com/dr-richard-barker/Settlers_of_the_Moon_or_Mars">Code</a></div></div>
+
+  <div class="card tile"><span class="icon">🏈</span>
+    <h3>Brute Bowl</h3>
+    <p>A Blood Bowl–inspired arena game exploring LLM game-theory for play design.</p>
+    <div class="meta"><span class="tag live">live</span>
+      <a class="btn primary" href="https://dr-richard-barker.github.io/Training_LLM_game-theory_using_bloodbowl/">Play →</a>
+      <a class="btn" href="https://github.com/dr-richard-barker/Training_LLM_game-theory_using_bloodbowl">Code</a></div></div>
+
+  <div class="card tile"><span class="icon">🚀</span>
+    <h3>Lunar &amp; Martian Frontier</h3>
+    <p>A frontier-colony game prototype.</p>
+    <div class="meta"><span class="tag proto">prototype</span>
+      <a class="btn primary" href="https://dr-richard-barker.github.io/Lunar-and-Martian-frontier-game-prototype/">Play →</a>
+      <a class="btn" href="https://github.com/dr-richard-barker/Lunar-and-Martian-frontier-game-prototype">Code</a></div></div>
+
+  <div class="card tile"><span class="icon">⚔️</span>
+    <h3>Lunar Red Alert</h3>
+    <p>A space-age total conversion of OpenRA — a lunar/vacuum RTS. Desktop mod (not browser-playable); the page is a landing/overview.</p>
+    <div class="meta"><span class="tag">desktop mod</span>
+      <a class="btn" href="https://dr-richard-barker.github.io/Lunar_Red_Alert/">Overview →</a>
+      <a class="btn" href="https://github.com/dr-richard-barker/Lunar_Red_Alert">Code</a></div></div>
+</div>
+
+<h2 id="tools">🧪 Modeling &amp; simulation tools</h2>
+<div class="cards">
+  <div class="card tile"><span class="icon">🌱</span>
+    <h3>Seed Sowing Simulator</h3>
+    <p>In-silico seed sowing / germination simulator for investigating tropisms.</p>
+    <div class="meta"><span class="tag live">live</span>
+      <a class="btn primary" href="https://dr-richard-barker.github.io/Seed_sowing_simulator/">Launch →</a>
+      <a class="btn" href="https://github.com/dr-richard-barker/Seed_sowing_simulator">Code</a></div></div>
+
+  <div class="card tile"><span class="icon">🌿</span>
+    <h3>Virtual Root</h3>
+    <p>Open web rebuild of SimuPlant / The Virtual Root — auxin transport through a root tip.</p>
+    <div class="meta"><span class="tag live">live</span>
+      <a class="btn primary" href="https://dr-richard-barker.github.io/virtual-root/">Launch →</a>
+      <a class="btn" href="https://github.com/dr-richard-barker/virtual-root">Code</a></div></div>
+
+  <div class="card tile"><span class="icon">💨</span>
+    <h3>LunarLeaf CFD</h3>
+    <p>Validated in-browser CFD of gravity-dependent gas transport across a leaf (lattice-Boltzmann).</p>
+    <div class="meta"><span class="tag live">live</span>
+      <a class="btn primary" href="https://dr-richard-barker.github.io/LunarLeaf-CFD/">Launch →</a>
+      <a class="btn" href="https://github.com/dr-richard-barker/LunarLeaf-CFD">Code</a></div></div>
+
+  <div class="card tile"><span class="icon">🍃</span>
+    <h3>Aero-Leaf CFD</h3>
+    <p>Leaf aerodynamic CFD analysis (adapted from a Blender-based workflow).</p>
+    <div class="meta"><span class="tag">code</span>
+      <a class="btn primary" href="https://github.com/dr-richard-barker/Aero-leaf-CFD-analysis-adapted-from-blender-ish">Code →</a></div></div>
+
+  <div class="card tile"><span class="icon">⚖️</span>
+    <h3>Statolith Physics Simulator</h3>
+    <p>Physics simulator for statolith (gravity-sensing) modelling in root cells.</p>
+    <div class="meta"><span class="tag">code</span>
+      <a class="btn primary" href="https://github.com/dr-richard-barker/Physics-simulator-for-statolith-modelling-">Code →</a></div></div>
+
+  <div class="card tile"><span class="icon">🍂</span>
+    <h3>Leaf FDM Model (gravity-off)</h3>
+    <p>A leaf finite-difference model illustrating the effect of turning gravity off.</p>
+    <div class="meta"><span class="tag">code</span>
+      <a class="btn primary" href="https://github.com/dr-richard-barker/AstroBotany_LEAF_FDM_model_test">Code →</a></div></div>
+
+  <div class="card tile"><span class="icon">🪁</span>
+    <h3>Nature's Aerodynamic Analyser</h3>
+    <p>Aerodynamic analyser — a foundation for modelling the lunar leaf.</p>
+    <div class="meta"><span class="tag">code</span>
+      <a class="btn primary" href="https://github.com/dr-richard-barker/Nature-s-aerodynamic-analyser">Code →</a></div></div>
+</div>
+
+<div class="content">
+<p class="note">Third-party engine forks (<code>habitat-sim</code>, <code>mars-sim</code>,
+<code>Lunar_Red_Alert_fork</code>/OpenRA) are excluded — these are original works and rebuilds.
+Games marked <b>live</b> run in the browser; <b>prototype</b> is early; <b>desktop mod</b> runs
+outside the browser. Tools marked <b>code</b> are source-only (not yet browser-hosted).</p>
+</div>
+</main>
+<footer class="site">
+  CoSE Arcade — original space games &amp; plant modeling tools ·
+  <a href="https://github.com/dr-richard-barker">github.com/dr-richard-barker</a>
+</footer></body></html>
